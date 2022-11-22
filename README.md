@@ -20,9 +20,9 @@
 - JavaEE8 - OpenLiberty
 - DB アクセスは JPA を利用
 
-Spring Boot バージョンはこちら
+※Spring Boot バージョンは[こちら](https://github.com/junyakitady/gke-spring/)
 
-Quarkus バージョンはこちら
+※Quarkus バージョンは[こちら](https://github.com/junyakitady/gke-quarkus/)
 
 # Cloud Run デプロイ手順
 ## プロジェクトの作成

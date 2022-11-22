@@ -1,6 +1,18 @@
+
+# Maven
+target/
+
+# Eclipse
 /.apt_generated/
 /.apt_generated_tests/
-/target/
+.project
+.classpath
+.settings/
+bin/
 
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
 .DS_Store
-
