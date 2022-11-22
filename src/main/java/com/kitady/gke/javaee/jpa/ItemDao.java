@@ -23,8 +23,7 @@ public class ItemDao {
   @Transactional
   public List<Item> getItemList(String uuid) {
     String sql =
-        "SELECT UUID, NAME, NAMEJP, TYPE, DIV, ITEMNO, PRICE, EXPLANATION, REGDATE, TIMEZONE, TIMESTMP, VERSION FROM ITEM";
-    // https://console.cloud.google.com/spanner/instances/noog/databases/noogl/details/tables?project=noogler-2
+        "SELECT UUID, NAME, NAMEJP, BREWERY, TYPE, DIV, ITEMNO, PRICE, EXPLANATION, REGDATE, TIMEZONE, TIMESTMP, VERSION FROM ITEM";
     if (uuid != null) {
       sql += " WHERE UUID=?uuid";
     }

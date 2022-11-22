@@ -24,52 +24,56 @@ public class Item implements Serializable {
   private static final long serialVersionUID = 1L;
 
   /** PK */
-  /** UUID(UUID) */
+  /** UUID */
   @Id
   @Column(name = "UUID")
   private String uuid;
 
-  /** NAME(NAME) */
+  /** NAME */
   @Column(name = "NAME")
   private String name;
 
-  /** JP NAME(NAMEJP) */
+  /** JP NAME */
   @Column(name = "NAMEJP")
   private String namejp;
 
-  /** TYPE(TYPE) */
+  /** BREWERY */
+  @Column(name = "BREWERY")
+  private String brewery;
+
+  /** TYPE */
   @Column(name = "TYPE")
   private String type;
 
-  /** DIV(DIV) */
+  /** DIV */
   @Column(name = "DIV")
   private String div;
 
-  /** ITEMNO(ITEMNO) */
+  /** ITEMNO */
   @Column(name = "ITEMNO")
   private Long itemno;
 
-  /** PRICE(PRICE) */
+  /** PRICE */
   @Column(name = "PRICE")
   private BigDecimal price;
 
-  /** EXPLANATION(EXPLANATION) */
+  /** EXPLANATION */
   @Column(name = "EXPLANATION")
   private String explanation;
 
-  /** REG_DATE(REGDATE) */
+  /** REGDATE */
   @Column(name = "REGDATE")
   private Date regdate;
 
-  /** TIME_ZONE(TIMEZONE) */
+  /** TIMEZONE */
   @Column(name = "TIMEZONE")
   private String timezone;
 
-  /** TIME_STMP(TIMESTMP) */
+  /** TIMESTMP */
   @Column(name = "TIMESTMP")
   private Timestamp timestmp;
 
-  /** VERSION(VERSION) */
+  /** VERSION */
   @Version
   @Column(name = "VERSION")
   private Timestamp version;
@@ -82,18 +86,18 @@ public class Item implements Serializable {
   }
 
   /**
-   * UUID(UUID) getter
+   * UUID getter
    * 
-   * @return UUID(UUID)
+   * @return UUID
    */
   public String getUuid() {
     return this.uuid;
   }
 
   /**
-   * UUID(UUID) setter
+   * UUID setter
    * 
-   * @param uuid UUID(UUID)
+   * @param uuid UUID
    * 
    */
   public void setUuid(String uuid) {
@@ -101,198 +105,216 @@ public class Item implements Serializable {
   }
 
   /**
-   * NAME(NAME) getter
+   * NAME getter
    * 
-   * @return NAME(NAME)
+   * @return NAME
    */
   public String getName() {
     return this.name;
   }
 
   /**
-   * NAME(NAME) setter
+   * NAME setter
    * 
-   * @param name NAME(NAME)
+   * @param name NAME
    */
   public void setName(String name) {
     this.name = name;
   }
 
   /**
-   * JP NAME(NAMEJP) getter
+   * NAMEJP getter
    * 
-   * @return JP NAME(NAMEJP)
+   * @return NAMEJP
    */
   public String getNamejp() {
     return this.namejp;
   }
 
   /**
-   * JP NAME(NAMEJP) setter
+   * NAMEJP setter
    * 
-   * @param namejp JP NAME(NAMEJP)
+   * @param namejp NAMEJP
    */
   public void setNamejp(String namejp) {
     this.namejp = namejp;
   }
 
   /**
-   * TYPE(TYPE) getter
+   * BREWERY getter
    * 
-   * @return TYPE(TYPE)
+   * @return BREWERY
+   */
+  public String getBrewery() {
+    return this.brewery;
+  }
+
+  /**
+   * BREWERY setter
+   * 
+   * @param namejp BREWERY
+   */
+  public void setBrewery(String brewery) {
+    this.brewery = brewery;
+  }
+
+  /**
+   * TYPE getter
+   * 
+   * @return TYPE
    */
   public String getType() {
     return this.type;
   }
 
   /**
-   * TYPE(TYPE) setter
+   * TYPE setter
    * 
-   * @param type TYPE(TYPE)
+   * @param type TYPE
    */
   public void setType(String type) {
     this.type = type;
   }
 
   /**
-   * DIV(DIV) getter
+   * DIV getter
    * 
-   * @return DIV(DIV)
+   * @return DIV
    */
   public String getDiv() {
     return this.div;
   }
 
   /**
-   * DIV(DIV) setter
+   * DIV setter
    * 
-   * @param div DIV(DIV)
+   * @param div DIV
    */
   public void setDiv(String div) {
     this.div = div;
   }
 
   /**
-   * ITEMNO(ITEMNO) getter
+   * ITEMNO getter
    * 
-   * @return ITEMNO(ITEMNO)
+   * @return ITEMNO
    */
   public Long getItemno() {
     return this.itemno;
   }
 
   /**
-   * ITEMNO(ITEMNO) setter
+   * ITEMNO setter
    * 
-   * @param itemno ITEMNO(ITEMNO)
+   * @param itemno ITEMNO
    */
   public void setItemno(Long itemno) {
     this.itemno = itemno;
   }
 
   /**
-   * PRICE(PRICE) getter
+   * PRICE getter
    * 
-   * @return PRICE(PRICE)
+   * @return PRICE
    */
   public BigDecimal getPrice() {
     return this.price;
   }
 
   /**
-   * PRICE(PRICE) setter
+   * PRICE setter
    * 
-   * @param price PRICE(PRICE)
+   * @param price PRICE
    */
   public void setPrice(BigDecimal price) {
     this.price = price;
   }
 
   /**
-   * EXPLANATION(EXPLANATION) getter
+   * EXPLANATION getter
    * 
-   * @return EXPLANATION(EXPLANATION)
+   * @return EXPLANATION
    */
   public String getExplanation() {
     return this.explanation;
   }
 
   /**
-   * EXPLANATION(EXPLANATION) setter
+   * EXPLANATION setter
    * 
-   * @param explanation EXPLANATION(EXPLANATION)
+   * @param explanation EXPLANATION
    */
   public void setExplanation(String explanation) {
     this.explanation = explanation;
   }
 
   /**
-   * REG_DATE(REGDATE) getter
+   * REGDATE getter
    * 
-   * @return REG_DATE(REGDATE)
+   * @return REGDATE
    */
   public Date getRegdate() {
     return this.regdate;
   }
 
   /**
-   * REG_DATE(REGDATE) setter
+   * ATE setter
    * 
-   * @param regdate REG_DATE(REGDATE)
+   * @param regdate REGDATE
    */
   public void setRegdate(Date regdate) {
     this.regdate = regdate;
   }
 
   /**
-   * TIME_ZONE(TIMEZONE) getter
+   * TIMEZONE getter
    * 
-   * @return TIME_ZONE(TIMEZONE)
+   * @return TIMEZONE
    */
   public String getTimezone() {
     return this.timezone;
   }
 
   /**
-   * TIME_ZONE(TIMEZONE) setter
+   * TIMEZONE setter
    * 
-   * @param timezone TIME_ZONE(TIMEZONE)
+   * @param timezone TIMEZONE
    */
   public void setTimezone(String timezone) {
     this.timezone = timezone;
   }
 
   /**
-   * TIME_STMP(TIMESTMP) getter
+   * TIMESTMP getter
    * 
-   * @return TIME_STMP(TIMESTMP)
+   * @return TIMESTMP
    */
   public Timestamp getTimestmp() {
     return this.timestmp;
   }
 
   /**
-   * TIME_STMP(TIMESTMP) setter
+   * TIMESTMP setter
    * 
-   * @param timestmp TIME_STMP(TIMESTMP)
+   * @param timestmp TIMESTMP
    */
   public void setTimestmp(Timestamp timestmp) {
     this.timestmp = timestmp;
   }
 
   /**
-   * VERSION(VERSION) getter
+   * VERSION getter
    * 
-   * @return VERSION(VERSION)
+   * @return VERSION
    */
   public Timestamp getVersion() {
     return this.version;
   }
 
   /**
-   * VERSION(VERSION) setter
+   * VERSION setter
    * 
-   * @param version VERSION(VERSION)
+   * @param version VERSION
    */
   public void setVersion(Timestamp version) {
     this.version = version;
