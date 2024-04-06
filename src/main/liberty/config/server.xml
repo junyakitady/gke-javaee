@@ -2,10 +2,11 @@
 
     <!-- Enable features -->
     <featureManager>
-        <feature>cdi-3.0</feature>
-        <feature>restfulWS-3.0</feature>
-        <feature>persistence-3.0</feature>
-        <feature>jsonb-2.0</feature>
+        <feature>cdi-4.0</feature>
+        <feature>restfulWS-3.1</feature>
+        <feature>persistence-3.1</feature>
+        <feature>jsonb-3.0</feature>
+        <feature>servlet-6.0</feature>
     </featureManager>
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
@@ -31,5 +32,5 @@
 
     <applicationMonitor updateTrigger="mbean"/>
 
-    <webApplication contextRoot="/" id="gke-javaee" location="gke-javaee.war" name="gke-javaee"/>
+    <webApplication contextRoot="/" id="gke-jakarta" location="gke-jakarta.war" name="gke-jakarta"/>
 </server>

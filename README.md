@@ -17,7 +17,7 @@
 
 
 開発アプリケーションとしては以下のフレームワークを想定する。
-- JavaEE8 - OpenLiberty
+- Jakarta 10 - OpenLiberty
 - DB アクセスは JPA を利用
 
 ※Spring Boot バージョンは[こちら](https://github.com/junyakitady/gke-spring/)
@@ -81,10 +81,10 @@ Artifact Registry API と、脆弱性スキャンを有効にする。
 
 ## Cloud Build　の設定
 Cloud Build > トリガー より以下のトリガーを作成する。
-- 名前 `gke-javaee-run`
+- 名前 `gke-jakarta-run`
 - リージョン `asia-northeast1`
 - リポジトリ: ソースを保持するリポジトリと連携させる
-- ブランチ `develop`
+- ブランチ `jakarta`
 - Cloud Build 構成ファイル `cloudbuild.yaml`
 - 代入変数を追加 `TAG_NAME`:`latest`
 
